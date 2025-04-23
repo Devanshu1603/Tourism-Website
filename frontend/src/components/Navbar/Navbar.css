@@ -1,0 +1,141 @@
+.nav-container
+{
+    margin: 0 auto;
+	padding: 3em;
+	text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    z-index: 2000;
+    top: -10px;
+}
+
+.logo-container{
+    position: relative;
+    bottom: 25px;
+}
+
+.nav-container .link
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.link-motion {
+    display: inline-block; /* Ensure the motion divs don't stack */
+  }
+
+
+
+.nav-container .link:before
+{
+    position: absolute;
+    width: 2px;
+    height: 80%;
+    left: 0px;
+    top: 5px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.nav-container .link:hover:before
+{
+    width: 100%;
+}
+
+.logout-button {
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    bottom: 7px;
+    z-index: 1000; 
+
+    span{
+        font-size: 20px;
+        position: relative;
+        top: 10px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+
+    .nav-container{
+    position: absolute;
+    top: -20px;
+    z-index: 2000;
+    width: 100%;
+    height: 0px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .logo-container{
+        position: relative;
+        bottom: 19px;
+        left: -50px;
+    }
+
+    .nav-links{
+        width: 50%;
+        display: flex;
+        position: relative;
+        left: -55px;
+        background-color: red;
+    }
+
+    .nav-container .link
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 9px;
+    position: relative;
+    left: 30px;
+    bottom: 40px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.nav-container .link:before
+{
+    opacity: 0;
+    width: 0;
+}
+
+.logout-button {
+    background: none;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    bottom: 6px;
+    left: -2px;
+    z-index: 1000; 
+    height: 20px;
+    width: 10px;
+
+    span{
+        font-size: 13px;
+        position: relative;
+        left: 5px;
+        top: -13px;
+    }
+  }
+
+  }

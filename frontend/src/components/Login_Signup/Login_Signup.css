@@ -1,0 +1,201 @@
+
+
+
+.hero2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url('../images/travel.jpg')  
+      no-repeat center;
+      opacity: 0.9;
+}
+
+.login-signup-form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.login-signup-button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+  display: flex;
+}
+
+.login-signup-button-box .toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.toggle-btn.active {
+  border: none; 
+}
+
+.toggle-btn:focus {
+  outline: none; 
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.toggle-btn{
+  font-size: 13px;
+}
+
+.social-icons {
+  margin: 30px auto;
+  text-align: center;
+}
+
+  .social-icons img {
+      width: 30px;
+      margin: 0 12px;
+      box-shadow: 0 0 20px 0 #7f7f7f3d;
+      cursor: pointer;
+      border-radius: 50%;
+  }
+
+
+
+.login-signup-input-group {
+  top: 130px;
+  position: absolute;
+  width: 280px;
+  font-size: 15px;
+  transition: .5s;
+
+  p{
+    font-size: 13px;
+    margin-top: 20px;
+  }
+}
+
+.login-signup-input-group h3{
+  margin-bottom: 30px;
+}
+
+.login-signup-input-group .input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+}
+
+#signup-btn{
+  padding-left: 40px;
+}
+
+.login-signup-input-group .submit-btn {
+  width: 60%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+#login-btn{
+  margin-top: 20px !important;
+}
+
+#login { left: 50px;
+ }
+#register { left: 450px; }
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-field {
+  flex: 1;
+  padding-right: 35px; /* Space for the button */
+  border: none; /* Remove default borders */
+  border-bottom: 1px solid #999; /* Keep only bottom border */
+  outline: none; /* Remove outline on focus */
+}
+
+.eye-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none; /* Remove outline when clicked */
+}
+
+/* Ensure button does not show any border when focused */
+.eye-btn:focus {
+  outline: none;
+  border: none;
+}
+
+
+@media screen and (max-width: 480px) {
+  .hero2{
+    width: 100%;
+    background: none;
+    background: url('../images/travel2.jpg')  no-repeat center center / cover;
+  }
+
+  .login-signup-form-box{
+    width: 330px;
+    padding-left: 0px;
+    position: relative;
+    top: 13%;
+  }
+
+  .login-signup-input-group {
+    top: 130px;
+    left: 0;
+    position: absolute;
+    width: 250px;
+    font-size: 15px;
+    transition: .5s;
+
+    h3{
+      font-size: 20px;
+    }
+
+    p{
+      font-size: 11px !important;
+      margin-top: 15px;
+    }
+
+  }
+  
+
+}

@@ -1,0 +1,135 @@
+.article-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+    padding-top: 100px;
+}
+
+.carousel-container {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    will-change: transform;
+    position: relative;
+    bottom: 20px;
+    width: auto; /* Keeps container flexible */
+}
+
+.article-carousel h1 {
+    position: relative;
+    bottom: 65px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    z-index: 1000;
+}
+
+.article {
+    flex: 0 0 20%;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    width: auto; /* Preserved original width */
+}
+
+.article img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.article-info {
+    padding: 15px;
+}
+
+.article-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.article-info p {
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.article-info .read-more {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 15px;
+}
+
+.article-info .read-more:hover {
+    color: #0056b3;
+}
+
+/* Smooth Scrolling Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjusted for smooth scrolling */
+    }
+}
+
+.article-carousel:hover .carousel-container {
+    animation-play-state: paused;
+}
+
+/* Dots Indicator */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #007bff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 460px) {
+    .article-carousel {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-container {
+        display: flex;
+        animation: scroll 30s linear infinite;
+        width: auto; /* Keeps natural scrolling behavior */
+    }
+
+    .article {
+        flex: 0 0 90%;
+        width: 100%;
+        max-width: 70vw;
+        height: auto;
+        overflow-x: auto;
+    }
+
+    .article img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .article-info h3 {
+        font-size: 15px;
+    }
+}

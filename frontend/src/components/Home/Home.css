@@ -1,0 +1,153 @@
+*{
+    scrollbar-width: none;
+  }
+  
+  .home-container{
+    width:100vw;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    background: url('../images/River.jpg')  no-repeat center center/cover;
+  }
+  
+    .text-overlay h1{
+      font-size: 35px;
+      width: 100vw;
+    }
+  
+    .text-overlay h5{
+      color: "#fff";
+      font-size : 16px;
+     text-align: center;
+    }
+  
+    .text-overlay input{
+      width: 370px;
+      border-radius: 6px;
+      background-color: #fff;
+      color: #333;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      height: 50px;
+      padding-left: 20px;
+    }
+
+    .text-overlay input:focus{
+      border: none;
+      outline: none;
+    }
+  
+    .home-form{
+      display: flex;
+      justify-content: center;
+      gap: 1%;
+      width: 100vw;
+      margin-top: 20px;
+    }
+  
+    .text-overlay button{
+      background-color: #f59e0b;
+      height: 50px;
+      width: 120px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .text-overlay button {
+      border: none;
+      outline: none;
+    }
+
+  
+  .text-overlay {
+    position: absolute; /* Position the text overlay absolutely within the container */
+    top: 73%; /* Adjust this value to position the text vertically */
+    left: 50%; /* Adjust this value to position the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text overlay */
+    z-index: 2; /* Ensure the text overlay is above the subscription section */
+    color: white; /* Example: Set text color to white for visibility */
+    text-align: center; /* Center the text */
+    font-size: 30px;
+  }
+  
+  /* gallery */
+  
+  
+  
+  .Footer{
+   margin-bottom: 100px; 
+  }
+
+  
+  .home-preloader{
+    position: relative;
+    top: 130px;
+    left: 27%;
+  }
+
+  @media screen and (max-width: 480px) {
+
+    .home-container{
+    width:100%;
+    height: 28vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-overlay{
+   position: relative;
+   left: 180px;
+   width: 100%;
+   top:  190px;
+  }
+
+  .text-overlay h1{
+    font-size: 14px !important; 
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .text-overlay h5{
+    font-size : 9px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  .home-form{
+    width: 100%;
+    margin-bottom: 45px;
+    position: relative;
+    bottom: 30px;
+  }
+
+  
+  .text-overlay input{
+    width: 170px;
+    font-size: 9px;
+    height: 25px;
+    border-radius: 3px;
+    padding-top: 2px;
+  }
+
+  .text-overlay button{
+    height: 25px;
+    width: 80px;
+    border-radius: 6px;
+    font-size: 9px;
+    border-radius: 3px;
+  }
+
+  .sub-btn{
+    border: none;
+  }
+
+  .about{
+    margin-top: 20px;
+  }
+
+
+  }

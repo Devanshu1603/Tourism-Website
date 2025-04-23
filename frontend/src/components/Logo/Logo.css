@@ -1,0 +1,13 @@
+img{
+    width: 200px;
+    height: 50px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 480px) {
+    img{
+        width: 120px;
+        height: 30px;
+        z-index: 1000;
+    }
+}
